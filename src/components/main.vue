@@ -1,8 +1,10 @@
 <template>
 	<div>
-		<child @upup="change" :child-msg="data"></child>
+		<child @upup="change" :child-msg="data">			
+			<div slot="slot1">父组件插入</div>
+		</child>
 		<div>
-		    {{childData}}
+		    {{childData}}		    
 		</div>
 	</div>
 </template>

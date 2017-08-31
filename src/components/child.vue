@@ -2,6 +2,7 @@
 	<div>
 		<ul>
 			<li>{{msg}}</li>
+			<li><slot name="slot1">子组件</slot></li>			
 			<li>{{childMsg}}</li>
 			<li>
 				<div @click="toParent">click To parent</div>
